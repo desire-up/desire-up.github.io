@@ -1,0 +1,155 @@
+/*-- slider --*/
+
+.slide-inner {
+    padding: 0 40px;
+    background-color: #f6f6f6;
+}
+
+.slide-inner .item>img {
+    max-height: 480px;
+    width: fit-content;
+}
+
+/*-- //slider --*/
+
+/*-- main --*/
+
+/*-- article --*/
+
+.main-container div.column {
+    margin-bottom: 30px;
+}
+
+article .btn {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    border: 0;
+}
+
+.modal {
+    position: absolute;
+    height: 50%;
+    width: 50%;
+    top: 25%;
+    left: 25%;
+    bottom: 25%;
+    right: 25%;
+    z-index: 1050;
+    padding: 15px;
+    background-color: #fff;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, .5);
+    display: none;
+    opacity: 0;
+    -webkit-transition: opacity 0.2s ease-in-out;
+    -moz-transition: opacity 0.2s ease-in-out;
+    transition: opacity 0.2s ease-in-out;
+}
+
+.modal-dialog {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    border: 0;
+    border-radius: 0;
+    padding: 10px;
+    overflow: hidden;
+    text-align: center;
+    box-shadow: none;
+}
+
+.modal-header {
+    border: 0;
+    padding: 5px;
+}
+
+.modal-body {
+    padding: 5px;
+}
+
+article:hover .modal {
+    display: block;
+    opacity: 1;
+}
+
+/*-- //article --*/
+
+/*-- //main --*/
+
+
+
+/*
+
+*另外一种写法
+
+article {
+    margin-bottom: 30px;
+}
+
+.btn {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    border: 0;
+}
+
+.modal {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 1050;
+    padding: 15px;
+    display: none;
+    opacity: 0;
+}
+
+.modal-dialog {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.modal-content {
+    border: 0;
+    border-radius: 0;
+    padding: 10px;
+    width: 50%;
+    height: auto;
+    overflow: hidden;
+    text-align: center;
+}
+
+
+.modal-header {
+    border: 0;
+    padding: 5px;
+}
+
+.modal-body {
+    padding: 5px;
+}
+
+article:hover .modal {
+    display: block;
+    opacity: 1;
+}
+
+*/

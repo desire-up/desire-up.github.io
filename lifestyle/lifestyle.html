@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+  <title>Lifestyle</title>
+
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="../css/bootstrap.min.css">
+  <!-- 修复了bug和一些常见的浏览器的不一致,增强跨浏览器表现的一致性 -->
+  <link rel="stylesheet" href="../css/normalize.css">
+  <!-- 加载 Font Awesome 图标字体库 -->
+  <link rel="stylesheet" href="../css/fontawesome-all.css">
+  <!-- 加载common style样式 -->
+  <link rel="stylesheet" href="../css/style.css">
+  <!-- 添加main内容css -->
+  <link rel="stylesheet" href="dist/lifestyle.css">
+  <link rel="stylesheet" href="dist/sortable.min.css">
+
+  <script type="text/javascript" src="dist/sortable.min.js"></script>
+
+  <!-- HTML5 shim 和 Respond.js 是为了让 IE8 支持 HTML5 元素和媒体查询（media queries）功能 -->
+  <!-- 警告：通过 file:// 协议（就是直接将 html 页面拖拽到浏览器中）访问页面时 Respond.js 不起作用 -->
+  <!--[if lt IE 9]>
+      <script src="../js/html5shiv.min.js"></script>
+      <script src="../js/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+  <!-- header -->
+  <header class="header">
+    <div class="container-fluid">
+      <div class="row clearfix">
+        <div class="col-md-12 column">
+          <!-- nav -->
+          <nav class="navbar navbar-default" role="navigation">
+            <!-- nav-logo -->
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse"
+                data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a href="../index.html"><img class="logo" src="../img/logo.png"></a>
+            </div>
+            <!-- //nav-logo -->
+            <!-- nav-collapse -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+              <ul class="nav navbar-nav navbar-right">
+                <li><a href="../index.html">主页</a></li>
+                <li><a href="../portfolio.html">精选</a></li>
+                <li class="active"><a href="lifestyle.html">生活</a></li>
+                <li><a href="../gallery/gallery.html">相册</a></li>
+                <li><a href="../blog.html">博客</a></li>
+                <li><a href="../contact.html">联系</a></li>
+                <li><a href="../about.html">关于</a></li>
+                <li><a href="../faq.html">FAQ</a></li>
+                <li><a href="../login.html"><i class="fa fa-lock"></i>Login</a></li>
+              </ul>
+            </div>
+            <!-- nav-collapse -->
+          </nav>
+          <!-- //nav -->
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- //header -->
+  <!-- banner -->
+  <section class="banner">
+    <div class="banner-inner"></div>
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item"><a href="../index.html">主页</a></li>
+      <li class="breadcrumb-item active">生活</li>
+    </ol>
+  </section>
+  <!-- //banner -->
+  <!-- main -->
+  <main class="sortable">
+    <div class="main-container">
+      <div class="container-fluid">
+        <div class="wrapper">
+          <ul class="sortable-nav nav">
+            <li>
+              <a data-sjslink="all" class="nav-link">
+                所有
+              </a>
+            </li>
+            <li>
+              <a data-sjslink="flatty" class="nav-link">
+                风景
+              </a>
+            </li>
+            <li>
+              <a data-sjslink="funny" class="nav-link">
+                创意
+              </a>
+            </li>
+          </ul>
+
+          <div id="sortable" class="sjs-default">
+            <div data-sjsel="flatty">
+              <div class="card">
+                <img class="card-picture" src="./images/item-1.jpg" alt="">
+                <div class="card-infos">
+                  <h2 class="card-title"><a href="../blog.html">归田乐引</a></h2>
+                  <p class="card-text">
+                    <a href="../blog.html">
+                      暮雨濛阶砌。漏渐移、转添寂寞，点点心如碎。怨你又恋你。恨你惜你。毕竟教人怎生是...
+                    </a>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div data-sjsel="flatty">
+              <div class="card">
+                <img class="card-picture" src="./images/item-2.jpg" alt="">
+                <div class="card-infos">
+                  <h2 class="card-title">望远行</h2>
+                  <p class="card-text">
+                    <a href="../blog.html">
+                      管人闲底，且放我快活。便索些别茶只待，又怎不过偎花映月。且与一班半点，只怕你没丁香核...
+                    </a>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div data-sjsel="funny">
+              <div class="card">
+                <img class="card-picture" src="./images/item-3.jpg" alt="">
+                <div class="card-infos">
+                  <h2 class="card-title">惜黄花慢</h2>
+                  <p class="card-text">
+                    <a href="../blog.html">
+                      雁空浮碧，印晓月，露洗重阳天气。望极楼外，淡烟半隔疏林，掩映断桥流水。黄金篱畔白衣人，更谁会、渊明深意。晚风底。落日乱鸿，飞起无际。情多对景凄凉，念旧赏，步屐登高迢递。兴满东山，共携素手持杯，劝泛玉浆云蕊。此时霜鬓欲归心，谩老尽、悲秋情味。向醉里。免得又成憔悴...
+                    </a>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div data-sjsel="flatty">
+              <div class="card">
+                <img class="card-picture" src="./images/item-4.jpg" alt="">
+                <div class="card-infos">
+                  <h2 class="card-title">峭寒轻（赏残梅）</h2>
+                  <p class="card-text">
+                    <a href="../blog.html">
+                      照溪流清浅，正万梅都开，峭寒天气。才过了元宵，渐昼长禁宇，迤逦佳时。断肠枝上雪，残英已、片影初飞。苒苒随风，送春到、便烂漫香迟...
+                    </a>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div data-sjsel="flatty">
+              <div class="card">
+                <img class="card-picture" src="./images/item-5.jpg" alt="">
+                <div class="card-infos">
+                  <h2 class="card-title">朝中措</h2>
+                  <p class="card-text">
+                    <a href="../blog.html">
+                      尔黄发，欲三寿之作朋；遗我绿琴，顾双金之何报。”尝邀公至五羊，特为开宴，令洪丞相适代为乐语云：“云外神仙，何拘弱水。海隅老稚，始识魁星。”又寄调“临江仙”以侑觞云：“北斗南头云送喜，人间快睹魁星。向来平步到蓬瀛。如何天上客，来佐海边城...
+                    </a>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div data-sjsel="funny">
+              <div class="card">
+                <img class="card-picture" src="./images/item-6.jpg" alt="">
+                <div class="card-infos">
+                  <h2 class="card-title">转调二郎神</h2>
+                  <p class="card-text">
+                    <a href="../blog.html">
+                      闷来弹雀，又搅破、一帘花影。谩试著春衫，还思纤手，薰彻金炉烬冷。动是愁多如何向，但怪得、新来多病。想旧日沉腰，而今潘鬓，不堪临镜...
+                    </a>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div data-sjsel="flatty">
+              <div class="card">
+                <img class="card-picture" src="./images/item-7.jpg" alt="">
+                <div class="card-infos">
+                  <h2 class="card-title">锦标归（待雪）</h2>
+                  <p class="card-text">
+                    <a href="../blog.html">
+                      想像如今剡溪，应误幽人访客，轻舟闲舣。翠幕登临处，散无限清兴，顿孤沈醉。念好景佳时，谩望极、祥霙为瑞。却梅花、知我心情，故把飞英飘坠...
+                    </a>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div data-sjsel="flatty">
+              <div class="card">
+                <img class="card-picture" src="./images/item-8.jpg" alt="">
+                <div class="card-infos">
+                  <h2 class="card-title">清风满桂楼</h2>
+                  <p class="card-text">
+                    <a href="../blog.html">
+                      凉飙霁雨。万叶吟秋，团团翠深红聚。芳桂月中来，应是染、仙禽顶砂匀注。晴光助绛色，更都润、丹霄风露。连朝看、枝间粟粟，巧裁霞缕...
+                    </a>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div data-sjsel="funny">
+              <div class="card">
+                <img class="card-picture" src="./images/item-9.jpg" alt="">
+                <div class="card-infos">
+                  <h2 class="card-title">解珮令</h2>
+                  <p class="card-text">
+                    <a href="../blog.html">
+                      湘江停瑟。洛川回雪。是耶非、相逢飘瞥。云鬓风裳，照心事、娟娟出月。翦烟花、带萝同结。留环盟切。贻珠情彻。解携时、玉声愁绝。罗袜尘生，早波面、春痕欲灭。送人行、水声凄咽...
+                    </a>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </main>
+  <!-- //main -->
+  <!-- footer -->
+  <footer>
+    <div class="footer-bottom-holder">
+      <div class="container-fluid">
+        <div class="container-inner">
+          <div class="row clearfix">
+            <!-- copyright -->
+            <div class="col-md-6 column">
+              <div class="copyright">
+                <h6>© 2019 <a href="../about.html">Lore Iytomo</a>. All Rights Reserved<br />
+                  Design by <a href="../about.html">ZK</a>
+                </h6>
+              </div>
+            </div>
+            <!-- //copyright -->
+            <!-- social-icons -->
+            <div class="col-md-6 column">
+              <div class="footer-social-icons">
+                <a href="#" class="qq" target="_blank"><i class="fab fa-qq"></i></a>
+                <a href="#" class="weixin" target="_blank"><i class="fab fa-weixin"></i></a>
+                <a href="#" class="weibo" target="_blank"><i class="fab fa-weibo"></i></a>
+                <a href="../index.html"><img src="../img/logo-light.png" alt=""></a>
+              </div>
+            </div>
+            <!-- //social-icons -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- //footer -->
+  <!-- back-to-top -->
+  <a id="back-to-top" href="#" class="on">
+    <span><i class="fa fa-angle-up"></i></span>
+  </a>
+  <!-- //back-to-top -->
+
+
+  <script type="text/javascript">
+    document.querySelector('#sortable').sortablejs()
+  </script>
+
+  <!-- jQuery (Bootstrap 的所有 JavaScript 插件都依赖 jQuery，所以必须放在前边) -->
+  <script src="../js/jquery.min.js"></script>
+  <!-- 加载 Bootstrap 的所有 JavaScript 插件。你也可以根据需要只加载单个插件。 -->
+  <script src="../js/bootstrap.min.js"></script>
+</body>
+
+</html>

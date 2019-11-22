@@ -1,0 +1,113 @@
+/*-- main --*/
+
+article {
+    margin: 0 0 30px;
+    padding: 0 15px;
+}
+
+.post-picture {
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+}
+
+.post-text {
+    padding: 34px 51px 29px;
+    background-color: #fff;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+}
+
+.post-text>h3 {
+    margin: 0 0 15px;
+}
+
+.post-excerpt-holder {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    vertical-align: middle;
+}
+
+.post-excerpt-holder>p {
+    position: relative;
+    display: inline;
+    vertical-align: top;
+    margin: 0;
+}
+
+.post-info-holder {
+    position: relative;
+    margin: 43px 0 0;
+    display: inline-block;
+    width: 100%;
+    vertical-align: middle;
+    clear: both;
+    background-color: #fff;
+}
+
+.post-info>div {
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    float: left;
+    padding: 0 17px 0 0;
+    color: inherit;
+}
+
+.post-info>div::after {
+    position: absolute;
+    top: 0;
+    right: 5px;
+    content: '/';
+}
+
+.post-info>div:last-child::after {
+    content: '';
+    /* display: none; 一样效果 */
+}
+
+.post-info>div span {
+    margin: 0 3px 0 0;
+}
+
+/*
+.post-info>div a {
+    color: inherit;
+    line-height: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+}
+*/
+
+/*-- //main --*/
+
+/*-- pagination --*/
+
+.pagination {
+    float: right;
+    margin: 0;
+    vertical-align: middle;
+}
+
+.pagination li>a {
+    border: 0;
+    border-radius: 0;
+    background-color: #f6f6f6;
+}
+
+.pagination li>a,
+.pagination li>a:hover {
+    color: #454545;
+}
+
+.pagination>li:first-child>a {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.pagination>li:last-child>a {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+/*-- //pagination --*/
